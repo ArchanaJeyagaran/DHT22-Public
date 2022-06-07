@@ -27,3 +27,22 @@ if (speed < 40) {
   print("Ticket")
 }
   
+# prompt user for speed first 
+speed <- readline ("what is you speed?  ")
+speed <- as.numeric(speed)
+
+# check if user response is numeric
+if (is.na(speed)) {
+  print("Enter a number please!Quitting promgram ")
+} else {
+  if (speed < 40) {
+    print("You are SLOW")
+  } else if (speed <= 70){
+    print("Residential")
+  } else if (speed <= 120){
+    print("Highway")
+  } else {
+    print("Ticket")
+  }
+}
+
