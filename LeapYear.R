@@ -4,7 +4,7 @@
 year <- readline("Please enter the year: ")
 
 # convert user input into numeric
-year <- as.numeric(year )
+year <- as.numeric(year)
 
 # check if the input is valid 
 if (is.na(year)) {
